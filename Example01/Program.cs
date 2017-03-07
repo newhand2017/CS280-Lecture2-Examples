@@ -10,6 +10,9 @@ namespace Example01
     {
         private static void Main(string[] args)
         {
+            //---------------------------------------------
+            // Login Example
+            //---------------------------------------------
             Console.Write("請輸入使用者名稱 : ");
             string name = Console.ReadLine();
 
@@ -17,6 +20,8 @@ namespace Example01
             string password = Console.ReadLine();
 
             Console.WriteLine("Hi, {0}, 歡迎回來!", name);
+
+            //---------------------------------------------
         }
     }
 }
