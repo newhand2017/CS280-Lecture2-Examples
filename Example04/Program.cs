@@ -13,8 +13,8 @@ namespace Example04
             //---------------------------------------------
             // Claim
             //---------------------------------------------
-            int number_1 = 0;
-            int number_2 = 0;
+            int? number_1 = null;
+            int? number_2 = null;
 
             //---------------------------------------------
             Console.Write("請輸入第一個數字 : ");
@@ -24,9 +24,13 @@ namespace Example04
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                Console.WriteLine("第一個數字輸入錯誤");
+                Console.WriteLine("錯誤訊息 : \n" + e.ToString());
+
+                return; //結束程式
             }
 
+            //---------------------------------------------
             Console.Write("請輸入第二個數字 : ");
             try
             {
@@ -34,9 +38,13 @@ namespace Example04
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                Console.WriteLine("第二個數字輸入錯誤");
+                Console.WriteLine("錯誤訊息 : \n" + e.ToString());
+
+                return; //結束程式
             }
 
+            //---------------------------------------------
             Console.WriteLine("{0} + {1} = {2}", number_1, number_2, number_1 + number_2);
 
             //---------------------------------------------
